@@ -19,7 +19,7 @@ const BRANCH_NAME = 'fix/unignore-changelog'
 const PR_TITLE = `Remove changelog.md from .vtexignore`
 
 const PR_BODY = `
-This an [automated pull request](https://github.com/vtex/github-pull-request-script) that aims to:
+This an [automated pull request](https://github.com/viannaandreBR/github-pull-request-script) that aims to:
 
 %task_list%
 
@@ -43,7 +43,7 @@ const dryRun = args.includes('dry-run')
 const deleteAfter = args.includes('delete-after')
 
 export default {
-  githubToken: process.env.GH_TOKEN,
+  // githubToken: process.env.GH_TOKEN,
   branchName: BRANCH_NAME,
   deleteAfter,
   dryRun,
